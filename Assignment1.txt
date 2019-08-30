@@ -1,0 +1,27 @@
+Design a system that has a class for some object (Person, car,e tc)
+	- attributes
+	- serialize/deserialize static methods
+
+	- serialize saves the state of the object into a .csv
+	- use nio instead of io for this ^
+
+	- deserialize takes the .csv
+
+	- override equals() to compare objects of this class
+
+Have a driver (NOT THE MAIN) that instantiates an object of the class
+	- ask for characteristics of the object to create it
+	- ask for a filename.csv
+
+	- serialize the object
+
+	- create a duplicate of that first object (to compare)
+
+	- deserialize the object and assign the attributes
+
+	- call a test method that uses compareTo() (a method of the object class) (changing the .csv by one character, for example, would fail this test)
+
+
+When you're finished push to GitHub 
+	
+
