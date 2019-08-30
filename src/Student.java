@@ -7,7 +7,9 @@ public class Student {
         //serialize to csv using java.util.nio
     }
 
-    public static void deserialize() {}
+    public static void deserialize() {
+        //deserialize to csv using java.util.nio
+    }
 
     public void printinfo() {
         System.out.println("First name: " + fname);
