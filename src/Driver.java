@@ -1,7 +1,9 @@
 public class Driver {
-    Student stud = new Student();
+    private String filename = "studentinfo.csv";
 
-    public void print() {
-        stud.printinfo();
+    public void run() {
+        Student stud = new Student();
+        stud.serialize(filename);
+        // stud.deserialize(filename);
     }
 }

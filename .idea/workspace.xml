@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="786ce99b-8ad8-4f03-b960-2fbac8944dd8" name="Default Changelist" comment="">
+    <list default="true" id="786ce99b-8ad8-4f03-b960-2fbac8944dd8" name="Default Changelist" comment="Added one comment that should have been in initial commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Assignment1/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Assignment1/Driver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Assignment1/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Assignment1/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Assignment1/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Assignment1/main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Driver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,8 +74,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1567172008714</updated>
-      <workItem from="1567172012121" duration="2914000" />
+      <workItem from="1567172012121" duration="9513000" />
     </task>
+    <task id="LOCAL-00001" summary="Added one comment that should have been in initial commit">
+      <created>1567181016291</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1567181016291</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -85,5 +99,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added one comment that should have been in initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added one comment that should have been in initial commit" />
   </component>
 </project>
