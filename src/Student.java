@@ -1,7 +1,8 @@
 import java.io.*;
 import java.nio.*;
+import java.util.*;
 
-public class Student {
+public class Student implements Comparable<Student>{
     private String fname = "Garrett";
     private String lname = "Brenner";
     private int cwid = 20131189;
@@ -42,13 +43,43 @@ public class Student {
         }
     }
 
-    public static void deserialize(String filename) {
+    public void deserialize(String filename) {
         //deserialize to csv using java.util.nio
+        try (Scanner scanner = new Scanner(new File(filename));
+        ) {
+            scanner.nextLine();
+            String firstLine = scanner.nextLine();
+            String[] firstLineArry = firstLine.split(",");
+            fname = firstLineArry[0];
+            lname = firstLineArry[1];
+            cwid = Integer.parseInt(firstLineArry[2]);
+        }
+        catch (FileNotFoundException e) {
+            System.out.println(e);
+        }
     }
 
-    public void printinfo() {
+    public void printInfo() {
         System.out.println("First name: " + fname);
         System.out.println("Last name: " + lname);
         System.out.println("CWID: " + cwid);
     }
+
+    private String getInfo() {
+        String info = fname + lname + cwid;
+        return info;
+    }
+
+    @Override
+    public int compareTo(Student otherstud) {
+        //-1 means they are not the same
+        //1 means they are the same
+        if (getInfo().equals(otherstud.getInfo())) {
+            return 1;
+        }
+        else {
+            return -1;
+        }
+    }
+
 }
