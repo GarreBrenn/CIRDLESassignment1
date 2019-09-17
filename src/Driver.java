@@ -2,18 +2,16 @@ public class Driver {
     private String filename = "studentinfo.csv";
 
     public void run() {
-        Student stud = new Student();
+        Student stud = new Student("Garrett","Brenner","20131189");
 
         print("stud serializing...");
-        stud.serialize(filename);
-
-        Student stud2 = new Student();
+        Student.serialize(stud, filename);
 
         print("stud2 deserializing...");
-        stud2.deserialize(filename);
+        Student stud2 = Student.deserialize(filename);
 
         print("comparing...");
-        if (stud.compareTo(stud2) == 1) {
+        if (stud.compareTo(stud2) == 0) {
             print("The students are equal");
         }
         else {
