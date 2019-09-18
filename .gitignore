@@ -1,6 +1,6 @@
-.idea
+.idea/
 .idea/workspace.xml
-out
-CIRDLESassignment1
+out/
 *.iml
 *.txt
+*.csv
