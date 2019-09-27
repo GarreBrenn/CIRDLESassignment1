@@ -32,9 +32,7 @@ public class Student implements Comparable<Student>{
     }
 
     private Student() {
-        fname = "none";
-        lname = "none";
-        cwid = "0";
+        this("none","none","0");
     }
 
     public Student(String fname, String lname, String cwid) {
@@ -43,11 +41,12 @@ public class Student implements Comparable<Student>{
         this.cwid = cwid;
     }
 
-    public static void serialize(Student stud, String filename) {
+    public static void serialize(Student stud, String filename)
+            throws UnsupportedEncodingException, FileNotFoundException, IOException{
         //serialize to csv using java.nio
         final String CSV_SEPARATOR = ",";
-        try
-        {
+        //try
+        //{
             BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(filename)));
             StringBuffer oneLine = new StringBuffer();
             oneLine.append("First Name,Last Name,CWID");
@@ -65,6 +64,7 @@ public class Student implements Comparable<Student>{
 
             bw.flush();
             bw.close();
+            /*
         }
         catch (UnsupportedEncodingException e) {
             System.out.print(e);
@@ -75,6 +75,8 @@ public class Student implements Comparable<Student>{
         catch (IOException e){
             System.out.print(e);
         }
+
+             */
     }
 
     public static Student deserialize(String filename) {
@@ -107,7 +109,7 @@ public class Student implements Comparable<Student>{
 
     @Override
     public int compareTo(Student otherstud) {
-        return getInfo().compareTo(otherstud.getInfo());
+        return getInfo().compareToIgnoreCase(otherstud.getInfo());
     }
 
 }
